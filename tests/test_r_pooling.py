@@ -3,7 +3,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import anndata as ad
-from scranPY import compute_sum_factors
+from ov_scranpool import compute_sum_factors
 
 def test_qr_pooling_against_r_reference():
     root=Path(__file__).parent/'fixtures'

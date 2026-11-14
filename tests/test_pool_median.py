@@ -1,6 +1,6 @@
 """Even-gene pools must use the actual two middle order statistics."""
 import numpy as np
-from scranPY.main import forge_system
+from ov_scranpool.main import forge_system
 
 
 def test_pool_median_even_and_odd_gene_counts():
