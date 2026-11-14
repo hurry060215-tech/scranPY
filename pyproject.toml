@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "py-scranpool-omicverse"
+version = "0.1.0"
+description = "OmicVerse-maintained scranPY variant with reference-validated QR pooling repair"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "BSD-3-Clause"
+license-files = ["LICENSE", "ATTRIBUTION.md"]
+authors = [{name = "Seth Fortmann"}]
+maintainers = [{name = "Haoliang Zhu"}]
+dependencies = ["scanpy>=1.9", "cvxpy", "anndata>=0.10", "numpy>=1.23", "pandas>=1.5", "scipy>=1.10"]
+[project.urls]
+Source = "https://github.com/hurry060215-tech/scranPY"
+Upstream = "https://github.com/sfortma2/scranPY"
+[project.optional-dependencies]
+test = ["pytest>=7"]
+[tool.setuptools.packages.find]
+include = ["ov_scranpool*"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
